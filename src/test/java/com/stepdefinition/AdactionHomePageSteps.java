@@ -18,6 +18,8 @@ public class AdactionHomePageSteps extends LibGlobal {
 	public void user_launch_the_browser_and_navidate_to_adactin_page() {
 		getDriver();
 		getUrl("http://adactinhotelapp.com/");
+		getUrl("http://adactinhotelapp.com/");
+		
 	}
 
 	@When("User enters the username and password in adaction home page")
