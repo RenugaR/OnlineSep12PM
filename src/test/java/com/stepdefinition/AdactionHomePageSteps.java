@@ -23,11 +23,15 @@ public class AdactionHomePageSteps extends LibGlobal {
 		getDriver();
 		getUrl("http://adactinhotelapp.com/");
 		getUrl("http://adactinhotelapp.com/");
-		
+
 	}
 
 	@When("User enters the username and password in adaction home page")
 	public void user_enters_the_username_and_password_in_adaction_home_page() throws IOException {
+		insertType(new AdactinPagePojo().getTxtUserName(), getData(0, 0));
+		insertType(new AdactinPagePojo().getTxtPass(), getData(0, 2));
+		insertType(new AdactinPagePojo().getTxtUserName(), getData(0, 0));
+		insertType(new AdactinPagePojo().getTxtPass(), getData(0, 2));
 		insertType(new AdactinPagePojo().getTxtUserName(), getData(0, 0));
 		insertType(new AdactinPagePojo().getTxtPass(), getData(0, 2));
 	}
