@@ -16,13 +16,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+r;
 
 public class LibGlobal {
 	public static WebDriver driver;
 
 	public static void getDriver() {
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ADMIN\\eclipse-workspace\\OnlineSel12PMAug\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\Chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
