@@ -16,19 +16,10 @@ public class AdactionHomePageSteps extends LibGlobal {
 
 	@Given("User launch the browser and navidate to adactin page")
 	public void user_launch_the_browser_and_navidate_to_adactin_page() {
-		getUrl("http://adactinhotelapp.com/");
-		getUrl("http://adactinhotelapp.com/");
-		getUrl("http://adactinhotelapp.com/");
-		getUrl("http://adactinhotelapp.com/");
-		getDriver();
-		getDriver();
-		getDriver();
-		getDriver();
-		getUrl("http://adactinhotelapp.com/");
-		getUrl("http://adactinhotelapp.com/");
 		
+		getDriver();
+		System.out.println("Hi i pushed a new code");
 	}
-
 	@When("User enters the username and password in adaction home page")
 	public void user_enters_the_username_and_password_in_adaction_home_page() throws IOException {
 		insertType(new AdactinPagePojo().getTxtUserName(), getData(0, 0));

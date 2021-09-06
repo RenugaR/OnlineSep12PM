@@ -1,7 +1,7 @@
 @P1 @LogIn @SMOKE @Regression
 Feature: Adaction page login function
 
-  @TC01 @login @invalidDetails
+  @TC01 @login 
   Scenario: To validate login functionality with invalid username and invalid password
     Given User launch the browser and navidate to adactin page
     When User enters the username and password in adaction home page
